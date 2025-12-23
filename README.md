@@ -27,6 +27,7 @@ The dataset consists of 1782 records and 11 columns. Of the 11 columns - 7 are o
 
 ## How do the variables relate with one another?
 From the plots like the heatmap we can say that : 
+
 ● The total amount of food prepared is also strongly related to the number of guests. More guests mean more food was prepared.
 ● However, a weak relationship was observed between the number of guests and the food waste per person. This suggests that simply having a bigger or smaller event doesn't necessarily mean each individual person will waste more or less.
 
