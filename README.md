@@ -4,7 +4,13 @@
 This project analyzes food consumption and wastage patterns at events to help reduce food waste and prevent potential shortages. The analysis identifies key factors driving waste and provides actionable insights for better food planning.
 
 ## About the Data
-The dataset contains **1782 records** and **11 variables** from various events where food was provided:
+The data comes from a food company and contains records about various events where food was provided. The data provides information about factors like the type of food served, the number of guests, the event's location and season, and importantly, how much food was wasted.
+
+## Goal of the Analysis 
+The Analysis aims to reduce the food wastage and prevent potential food shortages at events, ensuring there is always enough food for everyone and nothing goes to waste. It would help in understanding the reasons for wastage, and help guide the company to control and prevent it.
+
+## Overview of the data and variables involved in the dataset :
+The dataset consists of 1782 records and 11 columns. Of the 11 columns - 7 are of categorical type and other 3 are numeric.
 
 - **Type of Food:** Meat, fruits, baked goods, dairy, etc. (categorical)  
 - **Number of Guests:** Attendees at the event (numeric)  
@@ -18,40 +24,36 @@ The dataset contains **1782 records** and **11 variables** from various events w
 - **Pricing:** Low, moderate, high (categorical)  
 - **Wasted Food Amount:** Total food thrown away (numeric)  
 
-## Goal of the Analysis
-- Reduce food wastage at events  
-- Prevent potential food shortages  
-- Identify main drivers of waste to help the company plan better  
 
-## Key Insights
-- **Event Types & Locations:** Most events are corporate gatherings in suburban areas  
-- **High-Risk Food Types:** Fruits and baked goods are wasted most frequently  
-- **Preparation Method Impact:** Sit-down dinners are most common; buffets are less frequent  
-- **Storage & Season:** Waste percentages are similar regardless of refrigeration or season  
-- **Guest Numbers vs Food Prepared:** More guests strongly correlate with more food prepared, but waste per person is not strongly affected  
-- **Seasonal Waste Patterns:** Social gatherings show slightly higher waste in summer and winter  
+## How do the variables relate with one another?
+From the plots like the heatmap we can say that : 
+● The total amount of food prepared is also strongly related to the number of guests. More guests mean more food was prepared.
+● However, a weak relationship was observed between the number of guests and the food waste per person. This suggests that simply having a bigger or smaller event doesn't necessarily mean each individual person will waste more or less.
 
 ## Research Questions Addressed
-1. **Most common event type and location?**  
-   - Corporate events in suburban areas  
-2. **Which food types are most wasted?**  
-   - Fruits and baked goods  
-3. **Impact of food serving method?**  
-   - Sit-down dinners are most common; preparation style affects waste control  
-4. **Effect of storage and season?**  
-   - Little impact; average waste remains similar  
-5. **Number of events by storage conditions?**  
-   - More events involve food stored at room temperature  
-6. **Relationship between guests and food prepared?**  
-   - Strong positive correlation  
-7. **Seasonal variation in waste by event type?**  
-   - Minor variations; social gatherings slightly higher in summer and winter  
+**Question 1: What is the most common event type and location in our data?**
+Answer: The majority of the events are corporate gatherings, and they primarily take place in suburban areas. Hence, we can say that the food is most often being consumed in the suburban area and where our focus should be for making improvements.
+
+**Question 2: Which food types are most at risk for being wasted?**
+Answer: The plots show that fruits and baked goods are the most frequently wasted food types. Fruits, in particular, show a very high percentage of wastage in some cases, with one event having nearly 16% of fruits wasted. Hence, better planning is required for these specific food items.
+
+**Question 3: How does the way in which food is being served affects the overall amount of waste?**
+Answer: The most common preparation method for all events is a sit-down dinner, especially for corporate events and weddings. Whereas, buffets are the least common. Hence, we can say that clients prefer more formal dining styles, and hence have more control over food portions being wasted.
+
+**Question 4: Does storing food differently or holding an event in a different season have a big impact on waste?**
+Answer: The average percentage of food wasted is nearly the same for both refrigerated and room-temperature items, irrespective of the seasons. Therefore, changing the storage conditions will not significantly reduce overall waste.
+
+**Question 5: How does the number of events compare between different storage conditions?**
+Answer: As per the analysis, a higher number of events involve the food stored at room temperature as compared to events with refrigerated food. Hence, a large portion of the company’s data involves events where food that isn't refrigerated.
+
+**Question 6: What's the relationship between the number of guests and the amount of food prepared?**
+Answer: We can say that there is a very strong, positive relationship between the number of guests and the total amount of food prepared, as more people require more food.
+
+**Question 7: Do different types of events have different waste patterns depending on the season?**
+Answer: Although the average waste percentage is similar across all seasons, there is a little difference within each event type. For example, the average percentage of waste for social gatherings is higher in the summer and winter compared to all-season. Hence we can say that, seasonality might have a small effect on waste for specific types of events.
 
 ## Conclusion
-The analysis highlights the company’s food wastage patterns and suggests:  
-- Focus on corporate events in suburban areas  
-- Prioritize better planning for fruits and baked goods  
-- Adjust food quantities based on guest numbers rather than storage conditions  
+The analysis provides a view into the company’s food wastage patterns. The food company should focus on corporate events in suburban areas, with a special focus on managing fruits and baked goods. While changing storage conditions might not have a major impact on waste, understanding the relationships between factors like the number of guests and food quantity can help the food company plan more effectively and achieve the goal of preventing food shortages.
 
 Implementing these insights can help reduce waste and ensure sufficient food at all events.
 
